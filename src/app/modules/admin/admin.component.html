@@ -1,0 +1,10 @@
+<br>
+<p>this is header in admin page as parent</p>
+<div class="header-container">
+  <div class="header-menu">
+    <button mat-button routerLink="/home" routerLinkActive="routerLinkActive">Home</button>
+    <button mat-button routerLink="/admin" routerLinkActive="routerLinkActive">{{menuAdminName}}</button>
+  </div>
+</div>
+
+<app-setting (dataEventEmit)="setMenuName($event)"></app-setting>

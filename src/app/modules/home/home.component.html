@@ -1,0 +1,16 @@
+<br>
+<p>this is header in home page as parent</p>
+<div class="header-container">
+  <div class="header-menu">
+    <button mat-button routerLink="/home" routerLinkActive="routerLinkActive">Home</button>
+    <button mat-button routerLink="/admin" routerLinkActive="routerLinkActive">{{menuAdminName}}</button>
+  </div>
+
+  <mat-form-field _nghost class="search" style="width: 500px;">
+    <input matInput type="text" [(ngModel)]="searchInput" placeholder="Search">
+  </mat-form-field>
+</div>
+
+
+<app-detail [searchVal]="searchInput"></app-detail>
+

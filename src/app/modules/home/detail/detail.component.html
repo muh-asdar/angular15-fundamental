@@ -1,0 +1,10 @@
+<p>this is detail page which child from home</p>
+<p>value search from parent is <span><b> {{ searchVal }} </b></span></p>
+
+<br>
+<p>This is example data results from fetching API</p>
+<ul>
+  <li *ngFor="let item of allSurahQuran">
+    {{item.name_simple}}
+  </li>
+</ul>

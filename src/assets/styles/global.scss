@@ -1,0 +1,17 @@
+
+.header-container{
+  background-color: #673ab7;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+
+  button:not(:disabled) {
+    color: whitesmoke !important;
+  }
+
+  .routerLinkActive{
+    background-color: #7b49d3;
+  }
+}

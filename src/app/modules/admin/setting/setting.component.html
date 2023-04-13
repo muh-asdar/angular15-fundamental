@@ -1,0 +1,15 @@
+<p>this is setting page which child from admin</p>
+<mat-form-field appearance="outline">
+  <mat-label>Menu label setting</mat-label>
+  <input matInput placeholder="" [formControl]="menuNameInput">
+</mat-form-field>
+<br>
+<button mat-raised-button type="button" color="primary" (click)="setDataEmit()">Set Menu Name</button>
+<br>
+<br>
+<br>
+<p>this is reuseable component</p>
+<app-button [buttonColor]="'warn'" (buttonClicked)="setDataEmit()">Set Menu Name 1</app-button>
+<br>
+<br>
+<app-button [buttonColor]="'accent'" (buttonClicked)="setDataEmit()">Set Menu Name 2</app-button>
